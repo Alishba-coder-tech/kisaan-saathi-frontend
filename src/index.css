@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    @apply bg-slate-50 text-slate-800;
+    font-family: 'Inter', sans-serif;
+    direction: rtl;
+    min-height: 100vh;
+  }
+}
+
+@layer utilities {
+  .urdu {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 2.2;
+  }
+  .urdu-sm {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 2;
+    font-size: 0.9rem;
+  }
+  .urdu-lg {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 2.2;
+    font-size: 1.15rem;
+  }
+  .urdu-xl {
+    font-family: 'Noto Nastaliq Urdu', serif;
+    line-height: 2.2;
+    font-size: 1.35rem;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { @apply bg-slate-100; }
+::-webkit-scrollbar-thumb { @apply bg-green-500 rounded-full; }
+
+/* Horizontal quick navigation */
+.scrollbar-hide { -ms-overflow-style: none; scrollbar-width: none; }
+.scrollbar-hide::-webkit-scrollbar { display: none; }
